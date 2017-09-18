@@ -9,89 +9,89 @@
         android:layout_alignParentStart="true">
 
         <Button
-            android:id="@+id/btn00"
+            android:id="@+id/btn0"
             android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp" />
 
         <Button
-            android:id="@+id/btn01"
+            android:id="@+id/btn1"
             android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp" />
 
         <Button
-            android:id="@+id/btn02"
+            android:id="@+id/btn2"
             android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:onClick = "gridButtonClick"
+            android:layout_width="118dp"
+            android:layout_height="114dp"
+            android:layout_column="0"
+            android:layout_row="1" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:onClick = "gridButtonClick"
+            android:layout_width="118dp"
+            android:layout_height="114dp"
+            android:layout_column="1"
+            android:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:onClick = "gridButtonClick"
+            android:layout_width="118dp"
+            android:layout_height="114dp"
+            android:layout_column="1"
+            android:layout_row="1" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:onClick = "gridButtonClick"
+            android:layout_width="118dp"
+            android:layout_height="114dp"
+            android:layout_column="0"
+            android:layout_row="2" />
 
         <Button
             android:id="@+id/btn10"
             android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
-            android:layout_column="0"
-            android:layout_row="1" />
+            android:layout_column="1"
+            android:layout_row="3" />
 
         <Button
-            android:id="@+id/btn21"
+            android:id="@+id/btn9"
             android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
-            android:layout_column="1"
+            android:layout_column="0"
+            android:layout_row="3" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:onClick = "gridButtonClick"
+            android:layout_width="118dp"
+            android:layout_height="114dp"
+            android:layout_column="2"
             android:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:onClick = "gridButtonClick"
+            android:layout_width="118dp"
+            android:layout_height="114dp"
+            android:layout_column="2"
+            android:layout_row="1" />
 
         <Button
             android:id="@+id/btn11"
-            android:onClick = "gridButtonClick"
-            android:layout_width="118dp"
-            android:layout_height="114dp"
-            android:layout_column="1"
-            android:layout_row="1" />
-
-        <Button
-            android:id="@+id/btn20"
-            android:onClick = "gridButtonClick"
-            android:layout_width="118dp"
-            android:layout_height="114dp"
-            android:layout_column="0"
-            android:layout_row="2" />
-
-        <Button
-            android:id="@+id/btn31"
-            android:onClick = "gridButtonClick"
-            android:layout_width="118dp"
-            android:layout_height="114dp"
-            android:layout_column="1"
-            android:layout_row="3" />
-
-        <Button
-            android:id="@+id/btn30"
-            android:onClick = "gridButtonClick"
-            android:layout_width="118dp"
-            android:layout_height="114dp"
-            android:layout_column="0"
-            android:layout_row="3" />
-
-        <Button
-            android:id="@+id/btn22"
-            android:onClick = "gridButtonClick"
-            android:layout_width="118dp"
-            android:layout_height="114dp"
-            android:layout_column="2"
-            android:layout_row="2" />
-
-        <Button
-            android:id="@+id/btn12"
-            android:onClick = "gridButtonClick"
-            android:layout_width="118dp"
-            android:layout_height="114dp"
-            android:layout_column="2"
-            android:layout_row="1" />
-
-        <Button
-            android:id="@+id/btn32"
             android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
