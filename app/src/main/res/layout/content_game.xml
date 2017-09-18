@@ -27,14 +27,6 @@
             android:layout_height="114dp" />
 
         <Button
-            android:id="@+id/btn3"
-            android:onClick = "gridButtonClick"
-            android:layout_width="118dp"
-            android:layout_height="114dp"
-            android:layout_column="0"
-            android:layout_row="1" />
-
-        <Button
             android:id="@+id/btn7"
             android:onClick = "gridButtonClick"
             android:layout_width="118dp"
@@ -97,6 +89,45 @@
             android:layout_height="114dp"
             android:layout_column="2"
             android:layout_row="3" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="118dp"
+            android:layout_height="114dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:onClick="gridButtonClick" />
+
+        <TextView
+            android:id="@+id/redTextView"
+            android:textColor="#FF0000"
+            android:typeface="monospace"
+            android:layout_width="112dp"
+            android:layout_height="52dp"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="254" />
+        <TextView
+            android:id="@+id/greenTextView"
+            android:textColor="#00FF00"
+            android:typeface="monospace"
+            android:layout_width="112dp"
+            android:layout_height="52dp"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="254" />
+        <TextView
+            android:id="@+id/blueTextView"
+            android:textColor="#0000FF"
+            android:typeface="monospace"
+            android:layout_width="112dp"
+            android:layout_height="52dp"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="254" />
 
     </GridLayout>
 </RelativeLayout>
