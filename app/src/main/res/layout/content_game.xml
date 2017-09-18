@@ -10,21 +10,25 @@
 
         <Button
             android:id="@+id/btn00"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp" />
 
         <Button
             android:id="@+id/btn01"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp" />
 
         <Button
             android:id="@+id/btn02"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp" />
 
         <Button
             android:id="@+id/btn10"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="0"
@@ -32,6 +36,7 @@
 
         <Button
             android:id="@+id/btn21"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="1"
@@ -39,6 +44,7 @@
 
         <Button
             android:id="@+id/btn11"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="1"
@@ -46,6 +52,7 @@
 
         <Button
             android:id="@+id/btn20"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="0"
@@ -53,6 +60,7 @@
 
         <Button
             android:id="@+id/btn31"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="1"
@@ -60,6 +68,7 @@
 
         <Button
             android:id="@+id/btn30"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="0"
@@ -67,6 +76,7 @@
 
         <Button
             android:id="@+id/btn22"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="2"
@@ -74,6 +84,7 @@
 
         <Button
             android:id="@+id/btn12"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="2"
@@ -81,6 +92,7 @@
 
         <Button
             android:id="@+id/btn32"
+            android:onClick = "gridButtonClick"
             android:layout_width="118dp"
             android:layout_height="114dp"
             android:layout_column="2"
