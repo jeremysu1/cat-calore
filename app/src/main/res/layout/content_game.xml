@@ -5,8 +5,7 @@
 
     <ImageView
         android:id="@+id/catImage"
-        android:layout_width="354dp"
-        android:layout_height="456dp"
+
         app:srcCompat="@drawable/cat3" />
 
     <GridLayout
