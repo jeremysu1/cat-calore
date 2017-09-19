@@ -15,5 +15,8 @@ Future Improvements:
 3) Customization and Interactivity of the Game
 
 
+Lessons:
+While developing this small app, I have learned about the small limitations that mobile phones have. I have also learned about the various interactions that Activities have with layouts and the potency of the combined efforts of XML and Java code. In addition, I have also learned that reading documentation is incredibly important due to the large amounts of libraries made available to developers.
+
 
 License: Cats Calore is under the MIT license.
