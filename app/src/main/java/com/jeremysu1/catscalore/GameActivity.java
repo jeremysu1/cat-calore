@@ -15,7 +15,7 @@ import java.util.Random;
 public class GameActivity extends AppCompatActivity {
     private ArrayList<Button> gridButtons = new ArrayList<>();
     private ArrayList<Integer> gridColors = new ArrayList<>();
-    private ArrayList<Integer> remainingButtons = new ArrayList<>(Arrays.asList(0,1,2,3,4,5,6,7,8,9,11));
+    private ArrayList<Integer> remainingButtons = new ArrayList<>(Arrays.asList(0,1,2,3,4,5,6,7,8,9,10,11));
     private int current_button = -1;
     private Random rand = new Random();
     @Override
@@ -36,11 +36,9 @@ public class GameActivity extends AppCompatActivity {
         gridButtons.add((Button) findViewById(R.id.btn9));
         gridButtons.add((Button) findViewById(R.id.btn10));
         gridButtons.add((Button) findViewById(R.id.btn11));
-        for(int i = 0; i < 12; i++){
+        for(int i = 0; i < 12; i++) {
             setRandomColors(i, rand);
         }
-
-        //btn.setBackgroundColor(Color.);
         selectNewColor();
     }
 
@@ -57,25 +55,20 @@ public class GameActivity extends AppCompatActivity {
 
     private void selectNewColor(){
         int size = remainingButtons.size();
-        int new_button_id = rand.nextInt(size);
-        int remaining_status = remainingButtons.get(new_button_id);
-
-        /*
-        //Log.e("SIZE", Integer.toString(size));
-        while(remaining_status == -1){
-            //Log.e("ID", Integer.toString(new_button_id));
-            //Log.e("STATUS", Integer.toString(remaining_status));
-            new_button_id = rand.nextInt(size);
-            remaining_status = remainingButtons.get(new_button_id);
-        }
-        */
-
-        //Log.e("NEXT BUTTON", Integer.toString(new_button_id));
-        int color = gridColors.get(new_button_id);
+        if(size == 0)
+            return;
+        Log.e("DEBUG", "RemainingButtons size is " + size);
+        int new_button_id_index = rand.nextInt(size);
+        Log.e("DEBUG", "NewButtonIdIndex for remainingButtons is " + new_button_id_index);
+        int new_button_id = remainingButtons.get(new_button_id_index);
+        Log.e("DEBUG", "RemainingButtons Id is " + new_button_id);
+        int color = gridColors.get(new Integer(new_button_id));
         int red = Color.red(color);
         int green = Color.green(color);
         int blue = Color.blue(color);
         current_button = new_button_id;
+
+        Log.e("Next", "NEXT BUTTON IS " + new_button_id);
 
         TextView r_view = (TextView) findViewById(R.id.redTextView);
         TextView g_view = (TextView) findViewById(R.id.greenTextView);
