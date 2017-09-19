@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -39,7 +40,16 @@ public class GameActivity extends AppCompatActivity {
         for(int i = 0; i < 12; i++) {
             setRandomColors(i, rand);
         }
+        getImage();
         selectNewColor();
+    }
+
+    private void getImage(){
+        int[] pic_ids = {R.drawable.cat1,R.drawable.cat2, R.drawable.cat3,R.drawable.cat4,R.drawable.cat5,
+                R.drawable.cat6,R.drawable.cat7,R.drawable.cat8,R.drawable.cat9,R.drawable.cat10};
+        ImageView catPic = (ImageView) findViewById(R.id.catImage);
+        int random_num = rand.nextInt(10);
+        catPic.setImageResource(pic_ids[random_num]);
     }
 
     private void setRandomColors(int button_id, Random rand){
@@ -57,18 +67,13 @@ public class GameActivity extends AppCompatActivity {
         int size = remainingButtons.size();
         if(size == 0)
             return;
-        Log.e("DEBUG", "RemainingButtons size is " + size);
         int new_button_id_index = rand.nextInt(size);
-        Log.e("DEBUG", "NewButtonIdIndex for remainingButtons is " + new_button_id_index);
         int new_button_id = remainingButtons.get(new_button_id_index);
-        Log.e("DEBUG", "RemainingButtons Id is " + new_button_id);
         int color = gridColors.get(new Integer(new_button_id));
         int red = Color.red(color);
         int green = Color.green(color);
         int blue = Color.blue(color);
         current_button = new_button_id;
-
-        Log.e("Next", "NEXT BUTTON IS " + new_button_id);
 
         TextView r_view = (TextView) findViewById(R.id.redTextView);
         TextView g_view = (TextView) findViewById(R.id.greenTextView);

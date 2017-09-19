@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onCatsButton(View view){
+        Intent intent = new Intent(this, CatsActivity.class);
+        startActivity(intent);
+    }
+
     public void onExitButton(View view){
         System.exit(0);
     }
