@@ -2,7 +2,7 @@ Cats Calore -
 This is a small game for Android that involves selecting a grid of colored squares based on a given set of RGB values. Doing so will uncover a lovely picture of a cat; you can also view these cats with the "Cats" button. There is currently no back button and the user must use the device's back button to go back to the menu. Cat Calore's functionality and styling are very simple and will see improvements in the future. Feedback or pull requests are always welcome!
 
 To Run:
-Clone this repo and open the project in Android Studio. From there, you should be able to run and test it in your own environment. Alternatively, you can place the file "app-debug.apk" found in /app/build/outputs/apk and run it directly on a mobile device to install it. This app supports a minimum of Android 6.0 SDK, Gradle Version 3.3 and Android Plugin Version 2.3.3.
+Clone this repo and open the project in Android Studio. From there, you should be able to run and test it in your own environment. Alternatively, you can place the file "app-debug.apk" found in the main directory and run it directly on a mobile device to install it. This app supports a minimum of Android 6.0 SDK, Gradle Version 3.3 and Android Plugin Version 2.3.3.
 
 
 The images of cats were obtained through the use of thecatapi which supplies a wide variety of cat pictures. 10 of these pictures were selected and put locally with the app.
