@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
@@ -40,16 +42,14 @@ public class GameActivity extends AppCompatActivity {
         for(int i = 0; i < 12; i++) {
             setRandomColors(i, rand);
         }
+
         getImage();
         selectNewColor();
     }
 
     private void getImage(){
-        int[] pic_ids = {R.drawable.cat1,R.drawable.cat2, R.drawable.cat3,R.drawable.cat4,R.drawable.cat5,
-                R.drawable.cat6,R.drawable.cat7,R.drawable.cat8,R.drawable.cat9,R.drawable.cat10};
         ImageView catPic = (ImageView) findViewById(R.id.catImage);
-        int random_num = rand.nextInt(10);
-        catPic.setImageResource(pic_ids[random_num]);
+        Picasso.with(this).load("https://thecatapi.com/api/images/get?type=jpg").into(catPic);
     }
 
     private void setRandomColors(int button_id, Random rand){
